@@ -8,13 +8,13 @@ namespace BankEncapsulation
     {
         public string name { get; set; }
 
-        private double balance;
-        public double Balance { get { return balance; } set { balance += value; } }
+        private double _balance;
+        public double Balance { get { return _balance; } set { _balance += value; } }
 
         public double Deposit(double amount)
         {
-            balance += amount;
-            return balance;
+            _balance += amount;
+            return _balance;
         }
         public double GetBalance()
         {

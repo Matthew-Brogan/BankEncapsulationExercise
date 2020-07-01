@@ -35,6 +35,10 @@ namespace BankEncapsulation
             {
                 Console.WriteLine("Have a great day!");
             }
+            Console.WriteLine("please enter your phone number:");
+            PersonalInformation you = new PersonalInformation();
+            you.NumberFormatted = Console.ReadLine();
+            Console.WriteLine($"Please press enter if this phone number is correct: {you.NumberFormatted}.");
         }
     }
 }
